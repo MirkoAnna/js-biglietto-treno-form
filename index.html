@@ -10,7 +10,69 @@
 <body>
     
 
+    <main>
 
+        <div class="container-top">
+
+            <h1 class="padding">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+            <div class="container-label border">
+                <div class="column">
+                    <label for="nome">Nome Cognome</label>
+                    <input id="nome" type="text" placeholder="Inserisci nome e cognome">
+                </div>
+
+                <div class="column">
+                    <label for="km">km da percorrere</label>
+                    <input id="km" class="form" type="number" min="10" value="00">
+                </div>
+                <div class="column">
+                    <label for="">Fascia d'et&agrave;</label>
+                    <select id="eta" name="eta">
+                        <option value="minorenne">Minorenne</option>
+                        <option value="maggiorenne">Maggiorenne</option>
+                        <option value="over65">Over65</option>
+                    </select>
+                </div>
+                <div class="btn-container">
+                    <div class="">
+                        <button id="genera" class="btn">Genera</button>
+                        <button id="annulla" class="btn">Annulla</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="biglietto" class="nascondi">
+
+            <h1>IL TUO BIGLIETTO</h1>
+            <div class="container-biglietto">
+                <h3>DETTAGLIO PASSEGGERI</h3>
+                <div class="container-dettagli">
+                    <div class="column-dettagli-nome gray">
+                        <h3>NOME PASSEGGERO</h3>
+                        <h4 id="passeggero"></h4>
+                    </div>
+                    <div class="column-dettagli">
+                        <h4>Offerta</h4>
+                        <p id="offerta"></p>
+                    </div>
+                    <div class="column-dettagli">
+                        <h4>Carrozza</h4>
+                        <p id="carrozza"></p>
+                    </div>
+                    <div class="column-dettagli">
+                        <h4>Codice CP</h4>
+                        <p id="codice"></p>
+                    </div>
+                    <div class="column-dettagli">
+                        <h4>Costo biglietto</h4>
+                        <p id="costo"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 
     <script type="text/javascript" src="main.js"></script>
 </body>
